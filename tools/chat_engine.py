@@ -30,8 +30,8 @@ Below are the complete official rules for Root. Use these as your primary refere
 def chat(messages: list[dict]) -> str:
     client = _get_client()
     response = client.messages.create(
-        model="claude-sonnet-4-20250514",
-        max_tokens=1024,
+        model="claude-haiku-4-5-20251001",
+        max_tokens=512,
         system=_build_system_prompt(),
         messages=messages,
     )

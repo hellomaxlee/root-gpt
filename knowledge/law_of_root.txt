@@ -15,19 +15,6 @@ Table of Contents
 11. Riverfolk Company
 12. Underground Duchy
 
-2
-3
-3
-4
-4
-5
-6
-7
-8
-10
-11
-12
-
 13. Corvid Conspiracy
 14. Lord of the Hundreds
 15. Keepers in Iron
@@ -40,21 +27,7 @@ Appendix F. Landmarks
 Appendix G. Glossary
 Index
 
-14
-14
-16
-17
-18
-19
-20
-20
-21
-21
-22
-
 (June 4, 2022)
-
-1
 
 Reading the Law
 
@@ -105,8 +78,6 @@ can go here for support: ledergames.com/replacements
 
 1.1.3
 
-2
-
 Precedence. If a card conflicts with the Law, follow the card. If the Learning to Play guide conflicts with the Law, follow the Law. If you can follow both a general rule and a faction or hireling
 rule, follow both; if you cannot, follow the faction
 or hireling rule.
@@ -125,7 +96,6 @@ one player has won the game (3.1).
 Interrupts. You cannot interrupt an action (including a compound action such as the Marquise’s
 March), ability (such as the Corvids’ Exposure), or
 persistent effect (such as the Eyrie Emigre card) with
-another effect unless it explicitly allows it. (For example, the Armorers card says it is used “In battle...”).
 
 1.5 Pieces
 1.5.1
@@ -274,8 +244,6 @@ your hand by spending a card of matching suit.
 You cannot treat an available bird dominance
 card as a non-bird suit.
 
-3
-
 4. Key Actions
 4.1 Craft
 
@@ -336,8 +304,6 @@ in corner clearings, you must use the Advanced Setup.
 5.1.2
 
 5.1.3
-
-4
 
 Foil Ambush. The attacker may also play an
 ambush card matching the clearing of the battle. If they do, the defender discards their ambush card and skips 4.3.1.II.
@@ -415,13 +381,6 @@ To set up an interesting game, choose factions whose
 Reach values add up to at least the total reach recommended for your player count. (Adventurous players are
 welcome to use any faction mix with 17+ Reach.)
 Viable Reach Sums
-3
-
-4
-
-5
-
-2
 
 Total Reach
 
@@ -433,23 +392,14 @@ sawmills, one wood per sawmill there.
 Reach Values
 
 6.5 Daylight
-10
 
 Lord of the Hundreds
 
-9
-
 Keepers in Iron
-
-8
 
 Underground Duchy
 
-8
-
 Eyrie Dynasties
-
-7
 
 Vagabond (first/second)
 
@@ -457,19 +407,11 @@ Vagabond (first/second)
 
 Riverfolk Company
 
-5
-
 Woodland Alliance
-
-3
 
 Corvid Conspiracy
 
-3
-
 Lizard Cult
-
-2
 
 6. Marquise de Cat M
 6.1 Overview
@@ -494,8 +436,6 @@ protect a strong, interconnected economy of wood.
 Players
 
 Marquise de Cat
-
-6
 
 6.3.5
 
@@ -551,8 +491,6 @@ a sawmill, and place a wood token there.
 6.6 Evening
 Draw one card, plus one card per uncovered draw bonus. Then, if you have more than five cards in your
 hand, discard cards of your choice until you have five.
-
-5
 
 7. Eyrie Dynasties E
 7.1 Overview
@@ -621,8 +559,6 @@ and each column can hold any number of cards.
 place a roost and three warriors in a clearing
 with the fewest warriors where all those pieces
 can be placed.
-
-6
 
 7.5 Daylight
 Your Daylight has two steps in the following order.
@@ -804,8 +740,6 @@ number.
 a card from your hand.
 8.5.2 Mobilize. Add a card from your hand to the Supporters stack.
 
-7
-
 8.5.3
 
 Train. Spend a card whose suit matches the printed suit of a base on the map to place a warrior in
@@ -851,8 +785,6 @@ forest ruins and providing aid to other factions.
 9.2.4
 
 9.2.5
-
-8
 
 Crafting. The Vagabond exhausts H to craft. All
 of his H match the suit of his current clearing. If
@@ -1037,8 +969,6 @@ the map. You may score one victory point per quest
 of matching suit you have completed, including
 this one, or draw two cards from the deck.
 
-9
-
 9.5.6
 
 9.5.7
@@ -1137,8 +1067,6 @@ but the F is still exhausted.)
 10.3.2
 
 10.3.3
-
-10
 
 Crafting. The Cult crafts during Evening by activating gardens whose printed suit matches the
 Outcast suit (10.4.1). (Generally this matches the
@@ -1271,8 +1199,6 @@ I Hand Card. The buyer takes any card from the
 Riverfolk’s hand and adds it to their hand. (The
 11.2.1
 
-11
-
 II
 
 III
@@ -1338,8 +1264,6 @@ spend a fund, return the warrior to its owner’s supply.
 11.5.1 Move. Commit one fund to take a move.
 11.5.2 Battle. Commit one fund to initiate a battle.
 11.5.3 Craft. Commit funds to craft a card from your
-
-12
 
 hand. Instead of moving these warriors to the
 Committed box, you must place them on empty spaces of the Trade Posts tracks matching the
@@ -1500,8 +1424,6 @@ per card draw icon showing. Then, if you have
 more than five cards in your hand, discard cards
 of your choice until you have five.
 
-13
-
 13. Corvid Conspiracy C
 The Corvid Conspiracy seeks to strong-arm the Woodland into submission by completing criminal plots,
 scoring victory points each time they flip one. The more
@@ -1579,8 +1501,6 @@ resolve its flip effect if it is a bomb or extortion.
 13.4.3 Recruit. Once per turn, you may spend any card
 to place one warrior in each matching clearing. (If
 you spend a bird, choose one suit to place warriors in.)
-
-14
 
 13.5 Daylight
 
@@ -1748,8 +1668,6 @@ points; for six or more clearings, score four points.
 have more than five cards in your hand, discard
 cards of your choice until you have five.
 
-15
-
 14.7 Moods
 14.7.1
 
@@ -1817,8 +1735,6 @@ letting them take more actions. However, each time
 they delve a relic or recover one, they might lose the
 Retinue card they used to act, so they will need to plan
 ahead and take prudent risks in order to succeed.
-
-16
 
 15.2 Faction Rules and Abilities
 15.2.1
@@ -1984,8 +1900,6 @@ A.5.1 Step 1: Choose. As a group, choose if you’re playing with one or two lan
 landmark cards you do not want to play with.
 A.5.2 Step 2: Deal and Collect. Shuffle the chosen landmark cards, deal out the chosen number, and col-
 
-17
-
 A.5.3
 
 lect the landmark piece shown on each dealt card.
@@ -2038,8 +1952,6 @@ remove all of the insurgent faction setup cards
 before dealing out any. (You may keep them if you’re
 playing with hirelings and feeling adventurous.)
 II Lock Last Insurgent. If the last faction setup
-
-18
 
 card dealt out is an insurgent, turn it sideways to
 show that it is locked. It cannot be chosen unless
@@ -2264,8 +2176,6 @@ the moving player draws one card. (This follows the
 normal move rules.) The Ferry cannot be battled or
 removed.
 
-19
-
 C.3 Mountain Map L
 C.3.1
 
@@ -2352,8 +2262,6 @@ D.5 Arbiter X
 D.5.1
 D.5.2
 
-20
-
 Starting Items. Start with M, F, S, S.
 Special Action: Protector. Before dice are rolled
 in a battle, the defender may enlist the Arbiter in
@@ -2394,7 +2302,6 @@ and place it in your clearing. Remove all enemy
 pieces from that clearing. Pieces cannot be placed
 in or moved into the clearing with the F. (You remain in this clearing. Once you move out, you cannot
 move back in. The F cannot be removed with a “Favor
-of the...” card because it is not an enemy piece.)
 
 E.1.2
 
@@ -2555,8 +2462,6 @@ Item. A square cardboard piece showing an item
 (M, S, C, etc.) that is not owned by any faction.
 Map. See 2.2.
 
-21
-
 G.1.15
 
 G.1.16
@@ -2590,8 +2495,6 @@ G.1.32
 G.1.33
 
 G.1.34
-
-22
 
 Map Edge. The single closed loop of clearings
 and paths that define the map boundary, including closed paths on the mountain map.
@@ -2783,8 +2686,6 @@ simultaneously, 3.1
 
 no duplicates of, 4.1.4
 
-23
-
 Cole dedicates this game to his younger brothers and
 sisters, who never let him forget how to play.
 Kyle dedicates this game to his children, who have
@@ -2832,8 +2733,6 @@ Jill Pullara), Dāvis Dālmanis, Luke Bridwell, Justin Keenan,
 Bryan Vogel, Nick “Nev” Burton, Doug Radcliffe, Jeremy Liles, Kovács Botond, Mark Overstreet, Hung Nguyen, Luke
 McNally, Joshua Clark Orkin, Guerric Samples, Hunter C
 Fyffe, Steve Owen, Jon Mott, Sam De Roest, Sarah Shirley, Michela Garber, Patrick Flores Velarde, Lili Chin, Christina Berkley, Sebastian Apel, Opie’s Funeral, and many others
-
-24
 
 Need a replacement part?
 ledergames.com/replacements
@@ -2890,5 +2789,3 @@ Step 4: Place ruins in the four slots marked with “R.”
 Step 5: Form item supply near the top of the map.
 Step 6: Gather dice and overview cards if desired.
 Step 7: Set up factions in setup order (A, B, C, etc.).
-
-

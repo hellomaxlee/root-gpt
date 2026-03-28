@@ -8,7 +8,14 @@ let messages = []
 function addMessage(role, text) {
     const div = document.createElement("div")
     div.className = `message ${role}`
-    div.innerHTML = `<div class="bubble">${escapeHtml(text)}</div>`
+    const bubble = document.createElement("div")
+    bubble.className = "bubble"
+    if (role === "assistant") {
+        bubble.innerHTML = marked.parse(text)
+    } else {
+        bubble.textContent = text
+    }
+    div.appendChild(bubble)
     chat.appendChild(div)
     chat.scrollTop = chat.scrollHeight
 }
@@ -25,12 +32,6 @@ function addTypingIndicator() {
 function removeTypingIndicator() {
     const el = document.getElementById("typing")
     if (el) el.remove()
-}
-
-function escapeHtml(text) {
-    const div = document.createElement("div")
-    div.textContent = text
-    return div.innerHTML
 }
 
 form.addEventListener("submit", async (e) => {
