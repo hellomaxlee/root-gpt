@@ -2,11 +2,11 @@ import os
 from pathlib import Path
 
 from fastapi import FastAPI
-from fastapi.responses import HTMLResponse
+from fastapi.responses import HTMLResponse, StreamingResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
-from tools.chat_engine import chat
+from tools.chat_engine import chat_stream
 from tools.knowledge_base import load_knowledge
 
 app = FastAPI(title="Root Bot")
@@ -21,10 +21,6 @@ class ChatRequest(BaseModel):
     messages: list[dict]
 
 
-class ChatResponse(BaseModel):
-    response: str
-
-
 @app.on_event("startup")
 async def startup():
     load_knowledge()
@@ -36,10 +32,13 @@ async def index():
     return html_path.read_text(encoding="utf-8")
 
 
-@app.post("/chat", response_model=ChatResponse)
+@app.post("/chat")
 async def chat_endpoint(request: ChatRequest):
-    response_text = chat(request.messages)
-    return ChatResponse(response=response_text)
+    def generate():
+        for chunk in chat_stream(request.messages):
+            yield chunk
+
+    return StreamingResponse(generate(), media_type="text/plain")
 
 
 @app.get("/health")

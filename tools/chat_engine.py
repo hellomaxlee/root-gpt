@@ -1,4 +1,5 @@
 import os
+from collections.abc import Generator
 
 import anthropic
 
@@ -27,12 +28,13 @@ Below are the complete official rules for Root. Use these as your primary refere
 </root_rules>"""
 
 
-def chat(messages: list[dict]) -> str:
+def chat_stream(messages: list[dict]) -> Generator[str, None, None]:
     client = _get_client()
-    response = client.messages.create(
+    with client.messages.stream(
         model="claude-haiku-4-5-20251001",
-        max_tokens=512,
+        max_tokens=300,
         system=_build_system_prompt(),
         messages=messages,
-    )
-    return response.content[0].text
+    ) as stream:
+        for text in stream.text_stream:
+            yield text

@@ -2,36 +2,28 @@ const chat = document.getElementById("chat")
 const form = document.getElementById("form")
 const input = document.getElementById("input")
 const sendBtn = document.getElementById("send-btn")
+const progressBar = document.getElementById("progress-bar")
 
 let messages = []
 
-function addMessage(role, text) {
+function addMessage(role, text, isHtml = false) {
     const div = document.createElement("div")
     div.className = `message ${role}`
     const bubble = document.createElement("div")
     bubble.className = "bubble"
-    if (role === "assistant") {
-        bubble.innerHTML = marked.parse(text)
+    if (isHtml) {
+        bubble.innerHTML = text
     } else {
         bubble.textContent = text
     }
     div.appendChild(bubble)
     chat.appendChild(div)
     chat.scrollTop = chat.scrollHeight
+    return bubble
 }
 
-function addTypingIndicator() {
-    const div = document.createElement("div")
-    div.className = "message assistant"
-    div.id = "typing"
-    div.innerHTML = `<div class="bubble typing-indicator"><span></span><span></span><span></span></div>`
-    chat.appendChild(div)
-    chat.scrollTop = chat.scrollHeight
-}
-
-function removeTypingIndicator() {
-    const el = document.getElementById("typing")
-    if (el) el.remove()
+function showProgress(active) {
+    progressBar.classList.toggle("active", active)
 }
 
 form.addEventListener("submit", async (e) => {
@@ -43,7 +35,18 @@ form.addEventListener("submit", async (e) => {
     messages.push({ role: "user", content: text })
     input.value = ""
     sendBtn.disabled = true
-    addTypingIndicator()
+    showProgress(true)
+
+    // Create assistant bubble for streaming
+    const div = document.createElement("div")
+    div.className = "message assistant"
+    const bubble = document.createElement("div")
+    bubble.className = "bubble"
+    bubble.innerHTML = `<span class="cursor"></span>`
+    div.appendChild(bubble)
+    chat.appendChild(div)
+
+    let fullText = ""
 
     try {
         const res = await fetch("/chat", {
@@ -51,14 +54,25 @@ form.addEventListener("submit", async (e) => {
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ messages }),
         })
-        const data = await res.json()
-        removeTypingIndicator()
-        addMessage("assistant", data.response)
-        messages.push({ role: "assistant", content: data.response })
+
+        const reader = res.body.getReader()
+        const decoder = new TextDecoder()
+
+        while (true) {
+            const { done, value } = await reader.read()
+            if (done) break
+            fullText += decoder.decode(value, { stream: true })
+            bubble.innerHTML = marked.parse(fullText) + `<span class="cursor"></span>`
+            chat.scrollTop = chat.scrollHeight
+        }
+
+        // Final render without cursor
+        bubble.innerHTML = marked.parse(fullText)
+        messages.push({ role: "assistant", content: fullText })
     } catch (err) {
-        removeTypingIndicator()
-        addMessage("assistant", "Something went wrong. Please try again.")
+        bubble.innerHTML = "Something went wrong. Please try again."
     } finally {
+        showProgress(false)
         sendBtn.disabled = false
         input.focus()
     }
