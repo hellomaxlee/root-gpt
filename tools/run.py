@@ -34,11 +34,7 @@ async def index():
 
 @app.post("/chat")
 async def chat_endpoint(request: ChatRequest):
-    def generate():
-        for chunk in chat_stream(request.messages):
-            yield chunk
-
-    return StreamingResponse(generate(), media_type="text/plain")
+    return StreamingResponse(chat_stream(request.messages), media_type="text/plain")
 
 
 @app.get("/health")
